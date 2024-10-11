@@ -20,6 +20,7 @@ function App() {
         </Routes>
       <Footer/> {/* Incluye el Footer */}
       </div>
+      
     </Router>
   );
 }
