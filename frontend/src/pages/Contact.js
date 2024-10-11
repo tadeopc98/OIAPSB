@@ -4,7 +4,7 @@ const Home = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/home`)
+    fetch(`${process.env.REACT_APP_API_URL}/contact`)
       .then(response => response.json())
       .then(data => setMessage(data.message));
   }, []);
