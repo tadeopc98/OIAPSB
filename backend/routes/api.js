@@ -10,4 +10,8 @@ router.get('/contact', (req, res) => {
     res.json({ message: 'API funcionando en pagina Contact' });
 });
 
+router.get('/acercaDe', (req, res) => {
+    res.json({ message: 'API funcionando en pagina Acerca De' });
+});
+
 module.exports = router;
