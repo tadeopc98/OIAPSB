@@ -5,6 +5,7 @@ import Contact from './pages/Contact'
 import About from './pages/About'
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar';  // Importa el Navbar
+import Footer from './components/Footer'; // Importa el Footer
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+      <Footer/> {/* Incluye el Footer */}
       </div>
     </Router>
   );
