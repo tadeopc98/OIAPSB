@@ -4,14 +4,16 @@ import Home from './pages/Home';
 import Contact from './pages/Contact'
 import About from './pages/About'
 import NotFound from './pages/NotFound';
-import Navbar from './components/Navbar';  // Importa el Navbar
+import Navbar from './components/Navbar2';  // Importa el Navbar
 import Footer from './components/Footer'; // Importa el Footer
 
 function App() {
   return (
     <Router>
-      <div>
-      <Navbar />
+      <div style={{ display: 'flex' }}>
+        <Navbar />
+        <div style={{ flex: 1, paddingLeft: '20px' }}>
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -19,6 +21,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       <Footer/> {/* Incluye el Footer */}
+      </div>
       </div>
       
     </Router>
