@@ -4,7 +4,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact'
 import About from './pages/About'
 import NotFound from './pages/NotFound';
-import Navbar from './components/Navbar2';  // Importa el Navbar
+import Navbar from './components/Navbar';  // Importa el Navbar
 import Footer from './components/Footer'; // Importa el Footer
 
 function App() {
