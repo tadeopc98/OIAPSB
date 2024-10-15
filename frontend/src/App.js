@@ -10,9 +10,9 @@ import Footer from './components/Footer'; // Importa el Footer
 function App() {
   return (
     <Router>
-      <div style={{ display: 'flex' }}>
+       <div >
         <Navbar />
-        <div style={{ flex: 1, paddingLeft: '20px' }}>
+       
       
         <Routes>
           <Route path="/" element={<Home />} />
@@ -21,7 +21,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       <Footer/> {/* Incluye el Footer */}
-      </div>
       </div>
       
     </Router>
