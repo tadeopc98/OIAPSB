@@ -1,65 +1,72 @@
-/* src/components/Navbar.css */
+/* Estilo global para eliminar márgenes y paddings del body y html */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 
+/* Ajuste para el navbar */
 .navbar {
-    background: linear-gradient(135deg, #26d7ff 0%, #2d9aff 100%) !important; /* Fondo claro */
-    width: auto;
-    margin: 0 auto;
-    height: 80px;
-    padding-left: 0 !important;  /* Asegúrate de que el navbar esté pegado al borde izquierdo */
-  }
-  
-  /* Estilos para la marca del navbar */
-  .navbar-brand {
-    color: #ffffff !important;
-    font-weight: bold;
-    padding-left: 0 !important;  /* Elimina cualquier padding a la izquierda */
-    margin-left: 0 !important;   /* Elimina cualquier margen a la izquierda */
+  background: linear-gradient(135deg, #26d7ff 0%, #2d9aff 100%) !important;
+  width: 100%; /* Ocupar todo el ancho */
+  margin: 0; /* Sin margen */
+  padding: 0; /* Sin padding */
+  height: 80px; /* Altura fija */
+}
+
+/* Estilos para la marca del navbar */
+.navbar-brand {
+  color: #ffffff !important;
+  font-weight: bold;
+  margin-left: 0 !important;   /* Elimina cualquier margen a la izquierda */
+  padding-left: 0 !important;  /* Elimina cualquier padding a la izquierda */
+}
+
+/* Ajusta la posición de la imagen del logo dentro del navbar */
+.navbar-brand img {
+  height: 80px; /* Ajusta la altura del logo si es necesario */
+  padding-left: 0; /* Elimina el padding de la imagen */
+  margin-left: 0;  /* Elimina el margen de la imagen */
+}
+
+/* Estilos para centrar el menú */
+.navbar-nav {
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+/* Estilo de los enlaces del navbar */
+.nav-link {
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover en los enlaces */
+.nav-item .nav-link:hover {
+  background-color: #0084ff !important;
+  color: #ffffff !important;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
+  transform: translateY(-15px);
+  border-radius: 40px;
+}
+
+/* Estilos para el botón de colapso en pantallas pequeñas */
+.navbar-toggler {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 1rem;
   }
 
-  /* Opcional: Si necesitas ajustar la posición de la imagen del logo dentro del navbar */
-  .navbar-brand img {
-    height: 80px; /* Ajusta la altura del logo si es necesario */
-  }
-  
-  /* Estilos para centrar el menú */
-  .navbar-nav {
-    margin: 0 auto; /* Centramos el menú */
-  }
-  
   .nav-link {
-    color: #ffffff !important;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 8px 16px; /* Espaciado interno para que parezcan botones */
-    border: 0px solid transparent; /* Borde inicial transparente */
-    border-radius: 5px; /* Bordes redondeados */
-    transition: all 0.3s ease; /* Transición suave para hover */
+    font-size: 14px;
   }
-  
-  /* Efecto hover en los enlaces */
-  .nav-item .nav-link:hover {
-    background-color: #0084ff !important;
-    color: #ffffff !important;
-    border-color: #ffffff; /* Borde visible al pasar el mouse */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1); /* Sombra al hacer hover */
-    transform: translateY(-15px); /* Efecto de elevación al hacer hover */
-    border-radius: 40px;
-  }
-  
-  /* Estilos para el botón de colapso en pantallas pequeñas */
-  .navbar-toggler {
-    border-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  /* Media query para pantallas pequeñas */
-  @media (max-width: 768px) {
-    .navbar {
-      padding: 0.5rem 1rem;
-    }
-  
-    .nav-link {
-      font-size: 14px; /* Reducir el tamaño de las fuentes en pantallas pequeñas */
-    }
-  }
-  
+}

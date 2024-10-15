@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
 .cards {
     padding-top: 100px;
     width: 50%; /* Reduce el ancho del contenedor para las tarjetas */
@@ -40,3 +46,35 @@
     transform: translateY(-25px); /* Efecto de elevación al hacer hover */
 }
 
+
+.bg-content {
+    background-image: url('../assets/quienesSomos.webp');
+    background-size: cover;
+    background-position: center;
+    position:relative;
+    width:100vw; /* Ocupar todo el ancho del viewport */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+  }
+  
+  /* Transparencia sobre la imagen de fondo */
+  .bg-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Controla la transparencia */
+    z-index: 1;
+  }
+  
+  /* Estilo del texto */
+  .bg-content p {
+    position: relative;
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+  }
