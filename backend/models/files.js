@@ -4,7 +4,7 @@ const files = [
       id: 1,
       titulo: "Manual del Usuario",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: "/pdfs/manual_usuario.pdf"
+      ubicacion: "../public/PDF1.pdf"
     },
     {
       id: 2,
