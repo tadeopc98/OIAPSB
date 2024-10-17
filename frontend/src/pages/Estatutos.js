@@ -1,18 +1,18 @@
 import React from 'react';
-import { Worker, Viewer } from '@react-pdf-viewer/core'; // Asegúrate de importar `Viewer` desde @react-pdf-viewer/core
+import './Estatutos.css';
+import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
 const Estatutos = () => {
-    const pdfUrl = "http://localhost:3001/static/pdf2.pdf";  // Ruta del archivo PDF
+    const pdfUrl = "http://localhost:3001/static/pdf2.pdf";
 
-    // Inicializamos el plugin de diseño por defecto
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
     return (
-        <div style={styles.container}> {/* Usamos el estilo para centrar */}
-            <div style={styles.viewerContainer}> {/* Tamaño reducido del contenedor */}
+        <div style={styles.container}>
+            <div style={styles.viewerContainer}>
                 <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                     <div
                         style={{
@@ -23,7 +23,7 @@ const Estatutos = () => {
                         <Viewer
                             fileUrl={pdfUrl}
                             plugins={[defaultLayoutPluginInstance]} // Añadimos el plugin de layout
-                            initialPageScale={0.4} // Escala inicial del PDF al 50%
+                            initialPageScale={0.5} // Escala inicial del PDF
                         />
                     </div>
                 </Worker>
@@ -32,7 +32,6 @@ const Estatutos = () => {
     );
 };
 
-// Estilos para centrar el visor de PDF
 const styles = {
     container: {
         display: 'flex',
@@ -41,9 +40,10 @@ const styles = {
         height: '100vh',
     },
     viewerContainer: {
-        width: '80%', // Tamaño reducido del visor
+        width: '80%',
         height: '80%',
-    }
+    },
+    
 };
 
 export default Estatutos;
