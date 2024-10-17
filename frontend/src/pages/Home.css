@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow-x: hidden;
   }
 
 .cards {
@@ -51,12 +52,14 @@ html, body {
     background-image: url('../assets/quienesSomos.webp');
     background-size: cover;
     background-position: center;
-    position:relative;
-    width:100vw; /* Ocupar todo el ancho del viewport */
-    margin: 0; /* Eliminar márgenes */
-    padding: 0; /* Eliminar padding */
-  }
-  
+    position: relative;
+    width: 100vw; /* Cambiado a 100% */
+    margin: 0;
+    padding: 0;
+}
+
+
+ 
   /* Transparencia sobre la imagen de fondo */
   .bg-content::before {
     content: '';
@@ -78,3 +81,11 @@ html, body {
     margin: 0;
     text-align: center;
   }
+
+  .container {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Cambiado a 100% */
+    position: relative;
+}
+
