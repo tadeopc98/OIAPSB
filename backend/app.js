@@ -2,7 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const path = require('path');
 const apiRoutes = require('./routes/api');
-const fileRoutes = require('./routes/fileRoutes');
+const pdfRoutes = require('./routes/pdfRoutes');
+
 const app = express();
 
 app.use(cors()); // Permitir peticiones del frontend
@@ -14,10 +15,10 @@ app.get('/', (req, res) => {
 });
 
 // Middleware para servir archivos estáticos (los PDFs)
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static(path.join(__dirname, 'pdfs'))); // Carpeta estática para PDFs
 
 app.use('/api', apiRoutes); // Usa las rutas de la API
-app.use('/api', fileRoutes);
+app.use('/api', pdfRoutes);
 
 // Servidor corriendo en el puerto 3001
 app.listen(3001, () => {

@@ -1,5 +1,5 @@
 // backend/models/files.js
-const files = [
+const pdfList = [
     {
       id: 1,
       titulo: "Manual del Usuario",
@@ -124,5 +124,5 @@ const files = [
     // Puedes agregar más archivos aquí
   ];
   
-  module.exports = files;
+  module.exports = pdfList;
   
