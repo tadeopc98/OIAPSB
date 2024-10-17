@@ -1,4 +1,3 @@
-// controllers/pdfController.js
 const pdfList = require('../models/pdfList');
 
 const getPdfList = (req, res) => {
@@ -10,7 +9,7 @@ const getPdf = (req, res) => {
     const pdf = pdfList.find(pdf => pdf.id === id);
 
     if (pdf) {
-        res.sendFile(pdf.path, { root: './pdfs' }); // Suponiendo que los archivos están en una carpeta /pdfs
+        res.sendFile(pdf.path, { root: path.join(__dirname, '../pdfs') }); // Ajusta la raíz para que apunte a la carpeta de PDFs
     } else {
         res.status(404).send('PDF not found');
     }
