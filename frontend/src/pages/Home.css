@@ -3,7 +3,7 @@ html, body {
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    background-image: url('../assets/quienesSomos.webp');
+    background: linear-gradient(135deg, #80e0f6 0%, #00D0FF 100%)
   }
 
   

@@ -1,34 +1,47 @@
-/* Oculta el botón de descarga */
-
-/* Oculta el botón de descarga */
-button[aria-label="Download"] {
-    display: none !important;
+/* Aseguramos que la barra lateral y el visor PDF estén alineados en fila */
+.estatutos-container {
+    display: flex; /* Alinea los elementos en fila, uno al lado del otro */
+    height: 100vh; /* Asegura que la altura ocupe toda la ventana */
 }
 
-button[aria-label="Open file"] {
-    display: none !important;
+/* Estilos para la barra lateral flotante */
+.estatutos-sidebar {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-top: 20px; /* Espacio entre el navbar y la barra lateral */
+    margin-left: 20px; /* Espacio entre el borde izquierdo y la barra lateral */
+    position: sticky;
+    top: 20px; /* Espacio desde la parte superior */
+    max-height: 90vh; /* Limita la altura de la barra lateral */
+    overflow-y: auto; /* Scroll interno si la lista es muy larga */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
 }
 
-button[aria-label="Print"] {
-    display: none !important;
+/* Estilos para el contenedor del visor PDF */
+.estatutos-viewer-container {
+    width: 70%; /* Toma el 70% del ancho disponible */
+    padding: 20px;
+    overflow: hidden; /* Asegura que no haya desbordamientos */
 }
 
-button[aria-label="More actions"] {
-    display: none !important;
+/* Estilo para el título de la lista */
+.estatutos-list-title {
+    text-align: right;
+    color: black !important;
 }
 
+/* Oculta ciertos botones del visor PDF */
+button[aria-label="Download"],
+button[aria-label="Open file"],
+button[aria-label="Print"],
+button[aria-label="More actions"],
 button[aria-label="Search"] {
     display: none !important;
 }
 
+/* Oculta la barra lateral del visor PDF */
 .rpv-default-layout__sidebar {
     display: none !important;
-}
-
-
-
-.List {
-    text-align: right;
-    color: black !important;
-    
 }

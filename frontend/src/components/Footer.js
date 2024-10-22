@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Footer.css";
 
 function Footer() {
@@ -9,7 +10,7 @@ function Footer() {
         <div className='footer-column'>
           <h3>Info Pag</h3>
           <ul>
-            <li><a href="#">¿Quiénes Somos?</a></li>
+            <li><Link to="/quienes-somos">¿Quiénes Somos?</Link></li>
           </ul>
         </div>
         
@@ -17,12 +18,12 @@ function Footer() {
         <div className='footer-column'>
           <h3>Servicios</h3>
           <ul>
-            <li><a href="#">Estatutos</a></li>
-            <li><a href="#">Estados Financieros</a></li>
-            <li><a href="#">Asambleas</a></li>
-            <li><a href="#">Obras</a></li>
-            <li><a href="#">Predios</a></li>
-            <li><a href="#">Compras Públicas</a></li>
+            <li><Link to="/estatutos">Estatutos</Link></li>
+            <li><Link to="/estados-financieros">Estados Financieros</Link></li>
+            <li><Link to="/asambleas">Asambleas</Link></li>
+            <li><Link to="/obras">Obras</Link></li>
+            <li><Link to="/predios">Predios</Link></li>
+            <li><Link to="/compras-publicas">Compras Públicas</Link></li>
           </ul>
         </div>
         
@@ -30,11 +31,11 @@ function Footer() {
         <div className='footer-column'>
           <h3>Contacto</h3>
           <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Teléfonos</a></li>
-            <li><a href="#">Correo</a></li>
-            <li><a href="#">Dirección / Horarios</a></li>
-            <li><a href="#">Atención</a></li>
+            <li><Link to="/facebook">Facebook</Link></li>
+            <li><Link to="/telefonos">Teléfonos</Link></li>
+            <li><Link to="/correo">Correo</Link></li>
+            <li><Link to="/direccion-horarios">Dirección / Horarios</Link></li>
+            <li><Link to="/atencion">Atención</Link></li>
           </ul>
         </div>
       </div>

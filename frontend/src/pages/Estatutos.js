@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Estatutos.css'
+import './Estatutos.css'; // Importamos los estilos CSS que son específicos para este componente
 import { Worker, Viewer } from '@react-pdf-viewer/core';
 import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
 import '@react-pdf-viewer/core/lib/styles/index.css';
@@ -12,20 +12,34 @@ const Estatutos = () => {
 
     // Obtener la lista de archivos PDF desde el backend
     useEffect(() => {
-        fetch('http://localhost:3001/api/pdfs')
+        fetch('http://localhost:3001/api/pdfs')  // Cambia esta URL si es necesario
             .then(response => response.json())
-            .then(data => setPdfs(data))
+            .then(data => {
+                setPdfs(data); // Guardamos los PDFs en el estado
+                console.log("Lista de PDFs obtenida:", data); // Depuración
+            })
             .catch(error => console.error('Error al obtener la lista de PDFs:', error));
     }, []);
 
+    // Verifica que se selecciona el PDF y que la URL se genera correctamente
+    const handlePdfSelection = (pdf) => {
+        const pdfUrl = `http://localhost:3001/static/${pdf.ubicacion}`;
+        setSelectedPdf(pdfUrl); // Actualizamos el estado con la URL completa del PDF
+        console.log("PDF seleccionado:", pdfUrl); // Depuración de la URL completa
+    };
+
     return (
-        <div style={styles.container}>
+        <div className="estatutos-container"> 
             {/* Columna izquierda: Listado de PDFs */}
-            <div style={styles.sidebar}>
-                <h2 className='List'>Lista de PDFs</h2>
+            <div className="estatutos-sidebar"> 
+                <h2 className='estatutos-list-title'>Lista de PDFs</h2>
                 <ul>
                     {pdfs.map((pdf) => (
-                        <li key={pdf.id} onClick={() => setSelectedPdf(pdf.ubicacion)}>
+                        <li 
+                            key={pdf.id} 
+                            onClick={() => handlePdfSelection(pdf)} // Llamamos a la función con la selección
+                            style={{ cursor: 'pointer' }} // Añadimos un cursor pointer para indicar que es clickeable
+                        >
                             {pdf.titulo}
                         </li>
                     ))}
@@ -33,7 +47,7 @@ const Estatutos = () => {
             </div>
 
             {/* Columna derecha: Visor de PDF */}
-            <div style={styles.viewerContainer}>
+            <div className="estatutos-viewer-container"> 
                 {selectedPdf ? (
                     <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
                         <div
@@ -43,7 +57,7 @@ const Estatutos = () => {
                             }}
                         >
                             <Viewer
-                                fileUrl={`http://localhost:3001/static/${selectedPdf}`} // Visor del PDF seleccionado
+                                fileUrl={selectedPdf} // Usamos la URL generada por el estado
                                 plugins={[defaultLayoutPluginInstance]} 
                                 initialPageScale={0.5} // Escala inicial del PDF
                             />
@@ -55,23 +69,6 @@ const Estatutos = () => {
             </div>
         </div>
     );
-};
-
-const styles = {
-    container: {
-        display: 'flex',
-        height: '100vh',
-    },
-    sidebar: {
-        width: '30%',
-        backgroundColor: '#f0f0f0',
-        padding: '20px',
-        overflowY: 'auto',
-    },
-    viewerContainer: {
-        width: '70%',
-        padding: '20px',
-    },
 };
 
 export default Estatutos;
