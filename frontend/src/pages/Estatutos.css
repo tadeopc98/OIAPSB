@@ -25,9 +25,7 @@ button[aria-label="Search"] {
     display: none !important;
 }
 
-html, body {
-    background-image: url('../assets/quienesSomos.webp');
-}
+
 
 .List {
     text-align: right;
