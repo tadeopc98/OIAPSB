@@ -24,3 +24,13 @@ button[aria-label="Search"] {
 .rpv-default-layout__sidebar {
     display: none !important;
 }
+
+html, body {
+    background-image: url('../assets/quienesSomos.webp');
+}
+
+.List {
+    text-align: right;
+    color: black !important;
+    
+}

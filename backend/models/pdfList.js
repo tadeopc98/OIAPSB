@@ -4,11 +4,11 @@ const pdfList = [
       id: 1,
       titulo: "Manual del Usuario",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: "PDF1.pdf"
+      ubicacion: "pdf1.pdf"
     },
     {
       id: 2,
-      titulo: "Guía Rápida",
+      titulo: "Pdf2",
       descripcion: "Guía rápida del sistema.",
       ubicacion: "pdf2.pdf"
     },
@@ -16,7 +16,7 @@ const pdfList = [
       id: 3,
       titulo: "Guía Rápida",
       descripcion: "Guía rápida del sistema.",
-      ubicacion: "../public/PDF1.pdf"
+      ubicacion: "pdf3.pdf"
     },
     {
       id: 4,
@@ -94,7 +94,7 @@ const pdfList = [
       id: 16,
       titulo: "Guía Rápida",
       descripcion: "Guía rápida del sistema.",
-      ubicacion: "../pdfs/pdf2.pdf"
+      ubicacion: "pdf2.pdf"
     },
     {
       id: 17,
