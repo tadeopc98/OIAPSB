@@ -29,45 +29,66 @@ const Estatutos = () => {
     };
 
     return (
-        <div className="estatutos-container"> 
-            {/* Columna izquierda: Listado de PDFs */}
-            <div className="estatutos-sidebar"> 
-                <h2 className='estatutos-list-title'>Lista de PDFs</h2>
-                <ul>
-                    {pdfs.map((pdf) => (
-                        <li 
-                            key={pdf.id} 
-                            onClick={() => handlePdfSelection(pdf)} // Llamamos a la función con la selección
-                            style={{ cursor: 'pointer' }} // Añadimos un cursor pointer para indicar que es clickeable
-                        >
-                            {pdf.titulo}
-                        </li>
-                    ))}
-                </ul>
-            </div>
-
-            {/* Columna derecha: Visor de PDF */}
-            <div className="estatutos-viewer-container"> 
-                {selectedPdf ? (
-                    <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
-                        <div
-                            style={{
-                                border: '1px solid rgba(0, 0, 0, 0.3)',
-                                height: '100%',
-                            }}
-                        >
-                            <Viewer
-                                fileUrl={selectedPdf} // Usamos la URL generada por el estado
-                                plugins={[defaultLayoutPluginInstance]} 
-                                initialPageScale={0.5} // Escala inicial del PDF
-                            />
-                        </div>
-                    </Worker>
-                ) : (
-                    <p>Selecciona un PDF para visualizarlo</p>
-                )}
-            </div>
+        <div className="estatutos-container">
+    {/* Nuevo contenedor que apila los sidebars */}
+    <div className="estatutos-sidebars-container">
+        {/* Primer sidebar */}
+        <div className="estatutos-sidebar">
+            <h5 className='estatutos-list-title'>Estatutos en archivos PDF por fecha</h5>
+            <ul>
+                {pdfs.map((pdf) => (
+                    <li 
+                        key={pdf.id} 
+                        onClick={() => handlePdfSelection(pdf)} 
+                        style={{ cursor: 'pointer' }}
+                    >
+                        {pdf.titulo}
+                    </li>
+                ))}
+            </ul>
         </div>
+        
+        {/* Segundo sidebar */}
+        <div className="estatutos-sidebar2">
+            <h5 className='estatutos-list-title'>Detalles de los archivos PDF´s</h5>
+
+            <p className='estatutos-list-titleD'>Titulo de archivo:</p>
+            <p className='estatutos-list-text'>Recibo de luz</p>
+
+            <p className='estatutos-list-titleD'>Descripción de archivo:</p>
+            <p className='estatutos-list-text'>Este recibo es del mes de Octubre</p>
+
+            <p className='estatutos-list-titleD'>Fecha del archivo:</p>
+            <p className='estatutos-list-text'>13/OCT/2024</p>
+
+            <p className='estatutos-list-titleD'>Proyecto:</p>
+            <p className='estatutos-list-text'>Página web</p>
+        </div>
+    </div>
+
+    {/* Visor de PDF */}
+    <div className="estatutos-viewer-container">
+        {selectedPdf ? (
+            <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js`}>
+                <div
+                    style={{
+                        border: '1px solid rgba(0, 0, 0, 0.3)',
+                        height: '100%',
+                    }}
+                >
+                    <Viewer
+                        fileUrl={selectedPdf}
+                        plugins={[defaultLayoutPluginInstance]}
+                        initialPageScale={0.5}
+                    />
+                </div>
+            </Worker>
+        ) : (
+            <p></p>
+        )}
+    </div>
+</div>
+
     );
 };
 

@@ -7,20 +7,29 @@ import logo from '../assets/Logo.jpg';  // Importa el logo
 
 const Navbar = () => {
   return (
-    
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          {/* <img src={logo} alt="Logo"/> Agrega la imagen del logo */}
-        </Link>
+        {/* Contenedor del logo y el texto */}
+        <div className="d-flex align-items-center">
+          {/* Logo */}
+          <Link to="/" className="navbar-brand">
+            <img src={logo} alt="Logo" style={{ height: '80px', width: 'auto' }} />
+          </Link>
+          {/* Texto al lado del logo */}
+          <span className="ms-3 text-organismo">Organismo Independiente de Agua Potable San Buenaventura A.C.</span>
+        </div>
+
+        {/* Botón para colapsar el menú en pantallas pequeñas */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto"> {/* Alinea los items a la derecha en pantallas grandes */}
+
+        {/* Navegación centrada */}
+        <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul className="navbar-nav"> {/* Alinea los items al centro */}
             <li className="nav-item">
               <Link className="nav-link" to="/">
-              <FontAwesomeIcon icon={faHome} /> Inicio
+                <FontAwesomeIcon icon={faHome} /> Inicio
               </Link>
             </li>
             <li className="nav-item">
@@ -30,7 +39,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about">
-              <FontAwesomeIcon icon={faInfoCircle} /> Acerca de
+                <FontAwesomeIcon icon={faInfoCircle} /> Acerca de
               </Link>
             </li>
           </ul>

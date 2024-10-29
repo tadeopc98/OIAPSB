@@ -19,14 +19,33 @@ const Home = () => {
   return (
     <div className="container">
       {/*Estructura de "quienesSomos"*/}
-      <div className=" bg-content">
-        <h2>
-          ¿Quiénes Somos?
-        </h2>
-        <p>
-          Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen...
-        </p>
-      </div>
+      <div className="bg-content">
+  <div className="columns-container">
+    {/* Columna 1: Quiénes Somos */}
+    <div className="column">
+      <h2>¿Quiénes Somos?</h2>
+      <p>
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500...
+      </p>
+    </div>
+
+    {/* Columna 2: Misión */}
+    <div className="column">
+      <h2>Misión</h2>
+      <p>
+        Nuestra misión es proporcionar soluciones innovadoras para mejorar la calidad de vida de las personas, apoyándonos en la sostenibilidad y la eficiencia.
+      </p>
+    </div>
+
+    {/* Columna 3: Visión */}
+    <div className="column">
+      <h2>Visión</h2>
+      <p>
+        Ser líderes en el mercado, comprometidos con el desarrollo sostenible y el bienestar de las comunidades en las que operamos, buscando siempre la excelencia.
+      </p>
+    </div>
+  </div>
+</div>
 
       {/* Estructura de la cuadrícula */}
       <div className="container_grid grid grid-cols-5 grid-rows-5 gap-4">

@@ -8,7 +8,7 @@ html, body {
 
 /* Ajuste para el navbar */
 .navbar {
-  background: linear-gradient(135deg, #26d7ff 0%, #2d9aff 100%) !important;
+  background: linear-gradient(45deg, #3fa1fd 0%, #0084ff   100%) !important;
   width: 100%; /* Ocupar todo el ancho */
   margin: 0; /* Sin margen */
   padding: 0; /* Sin padding */
@@ -24,11 +24,17 @@ html, body {
 }
 
 /* Ajusta la posición de la imagen del logo dentro del navbar */
+/* Ajusta la posición de la imagen del logo dentro del navbar */
 .navbar-brand img {
   height: 80px; /* Ajusta la altura del logo si es necesario */
-  padding-left: 0; /* Elimina el padding de la imagen */
+  width: 80px; /* Añade un ancho igual para hacer la imagen cuadrada */
+  border-radius: 50%; /* Convierte la imagen en un círculo */
+  border: 3px solid white; /* Borde blanco para crear el "marco" */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del círculo */
+  padding: 0; /* Elimina cualquier padding de la imagen */
   margin-left: 0;  /* Elimina el margen de la imagen */
 }
+
 
 /* Estilos para centrar el menú */
 .navbar-nav {
@@ -44,6 +50,7 @@ html, body {
   padding: 8px 16px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  position: inherit;
 }
 
 /* Efecto hover en los enlaces */
@@ -53,6 +60,7 @@ html, body {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
   transform: translateY(-15px);
   border-radius: 40px;
+  text-decoration: none;
 }
 
 /* Estilos para el botón de colapso en pantallas pequeñas */
@@ -60,13 +68,24 @@ html, body {
   border-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0.5rem 1rem;
-  }
+/* Estilo para el texto al lado del logo */
+/* Estilo para el texto al lado del logo */
+.text-organismo {
+  font-size: 1.5rem; /* Ajusta el tamaño de fuente */
+  font-weight: bold; /* Negrita para destacar el texto */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  color: #ffffff;
+}
 
-  .nav-link {
-    font-size: 14px;
+/* Si quieres que el texto sea responsivo y ajustado en pantallas pequeñas */
+@media (max-width: 768px) {
+  .text-organismo {
+    font-size: 1rem; /* Ajusta el tamaño del texto en pantallas pequeñas */
   }
 }
+
+/* Asegura que el contenedor colapse bien en pantallas pequeñas */
+.navbar-collapse {
+  flex-grow: 0;
+}
+

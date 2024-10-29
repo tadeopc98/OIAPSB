@@ -2,19 +2,19 @@
 const pdfList = [
     {
       id: 1,
-      titulo: "Manual del Usuario",
+      titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
       ubicacion: "pdf1.pdf"
     },
     {
       id: 2,
-      titulo: "Pdf2",
+      titulo: "Recibo de luz",
       descripcion: "Guía rápida del sistema.",
       ubicacion: "pdf2.pdf"
     },
     {
       id: 3,
-      titulo: "Guía Rápida",
+      titulo: "Cotizacion de proyecto",
       descripcion: "Guía rápida del sistema.",
       ubicacion: "pdf3.pdf"
     },
