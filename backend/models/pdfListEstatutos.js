@@ -4,13 +4,13 @@ const pdfList = [
       id: 1,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: "",
+      ubicacion: 'pdf1.pdf',
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
     {
       id: 2,
-      titulo: "actualizacion de software",
+      titulo: "actualizacion de software2222",
       descripcion: "Este es el manual de usuario para el sistema.",
       ubicacion: "",
       fecha: "2024-10-31s",
@@ -18,7 +18,7 @@ const pdfList = [
     },
     {
       id: 3,
-      titulo: "actualizacion de software",
+      titulo: "actualizacion de software333",
       descripcion: "Este es el manual de usuario para el sistema.",
       ubicacion: "",
       fecha: "2024-10-31s",
@@ -26,7 +26,7 @@ const pdfList = [
     },
     {
       id: 4,
-      titulo: "actualizacion de software",
+      titulo: "actualizacion de software444",
       descripcion: "Este es el manual de usuario para el sistema.",
       ubicacion: "",
       fecha: "2024-10-31s",
