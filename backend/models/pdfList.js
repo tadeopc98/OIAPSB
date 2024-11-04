@@ -4,7 +4,9 @@ const pdfList = [
       id: 1,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: "pdf1.pdf"
+      ubicacion: "pdf1.pdf",
+      fecha: "2024-10-31s",
+      proyecto: "Comercializadora"
     },
     {
       id: 2,
