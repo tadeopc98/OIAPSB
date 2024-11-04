@@ -4,7 +4,7 @@ const pdfList = [
       id: 1,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -12,7 +12,7 @@ const pdfList = [
       id: 2,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -20,7 +20,7 @@ const pdfList = [
       id: 3,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -28,7 +28,7 @@ const pdfList = [
       id: 4,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -36,7 +36,7 @@ const pdfList = [
       id: 5,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -44,7 +44,7 @@ const pdfList = [
       id: 6,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -52,7 +52,7 @@ const pdfList = [
       id: 7,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -60,7 +60,7 @@ const pdfList = [
       id: 8,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -68,7 +68,7 @@ const pdfList = [
       id: 9,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -76,7 +76,7 @@ const pdfList = [
       id: 10,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -84,7 +84,7 @@ const pdfList = [
       id: 11,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -92,7 +92,7 @@ const pdfList = [
       id: 12,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -100,7 +100,7 @@ const pdfList = [
       id: 13,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -108,7 +108,7 @@ const pdfList = [
       id: 14,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -116,7 +116,7 @@ const pdfList = [
       id: 15,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -124,7 +124,7 @@ const pdfList = [
       id: 16,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion:
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -132,7 +132,7 @@ const pdfList = [
       id: 17,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -140,7 +140,7 @@ const pdfList = [
       id: 18,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -148,7 +148,7 @@ const pdfList = [
       id: 19,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
@@ -156,7 +156,7 @@ const pdfList = [
       id: 20,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: 
+      ubicacion: "",
       fecha: "2024-10-31s",
       proyecto: "Comercializadora"
     },
