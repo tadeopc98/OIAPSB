@@ -108,15 +108,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* Séptima tarjeta */}
-            <div className="div_principal col-12 col-md-3 mb-3">
-              <div className="card-item card" onClick={() => navigate('/promociones')}>
-                <img src={prmociones} alt="Promociones" className="card-img-top" />
-                <div className="card-body">
-                  <h5 className="card-title">Promociones y descuentos</h5>
-                </div>
-              </div>
-            </div>
+            
             {/* Octava tarjeta */}
             <div className="div_principal col-12 col-md-3 mb-3">
               <div className="card-item card" onClick={() => navigate('/proyectos-en-curso')}>
@@ -135,15 +127,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            {/* Décima tarjeta */}
-            <div className="div_principal col-12 col-md-3 mb-3">
-              <div className="card-item card" onClick={() => navigate('/servicios')}>
-                <img src={servicios} alt="Servicios" className="card-img-top" />
-                <div className="card-body">
-                  <h5 className="card-title">Servicios</h5>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
