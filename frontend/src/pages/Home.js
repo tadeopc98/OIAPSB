@@ -11,6 +11,7 @@ import prmociones from '../assets/promociones.png';
 import encurso from '../assets/en-curso.png';
 import maquinaria from '../assets/excavador.png';
 import servicios from '../assets/servicio.png';
+import img1 from '../assets/img1.webp'
 
 const Home = () => {
   const navigate = useNavigate(); // Hook para redirigir a otras páginas
@@ -46,6 +47,50 @@ const Home = () => {
     </div>
   </div>
 </div>
+
+{/* Apartado de Servicios */}
+<div className="services-section">
+  <h2 className="section-title">Nuestros Servicios</h2>
+  <p className="section-subtitle">Explora nuestras soluciones en potabilización de agua.</p>
+  <div className="services-grid">
+    {/* Tarjeta 1 */}
+    <div className="service-card">
+      <div className="service-img-container">
+        <img src={img1} alt="Servicio 1" className="service-img" />
+        <div className="service-title-overlay">
+          <h3 className="service-title">Purificación de Agua</h3>
+        </div>
+      </div>
+    </div>
+
+    {/* Tarjeta 2 */}
+    <div className="service-card">
+      <div className="service-img-container">
+        <img src={img1} alt="Servicio 2" className="service-img" />
+        <div className="service-title-overlay">
+          <h3 className="service-title">Tratamiento de Residuos</h3>
+        </div>
+      </div>
+    </div>
+
+    {/* Tarjeta 3 */}
+    <div className="service-card">
+      <div className="service-img-container">
+        <img src={img1} alt="Servicio 3" className="service-img" />
+        <div className="service-title-overlay">
+          <h3 className="service-title">Distribución Sostenible</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{/* Línea divisoria con efecto especial */}
+<div className="divider">
+  <div className="line"></div>
+</div>
+
+
 
       {/* Estructura de la cuadrícula */}
       <div className="container_grid grid grid-cols-5 grid-rows-5 gap-4 tarjets">
@@ -131,7 +176,13 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* Línea divisoria con efecto especial */}
+<div className="divider">
+  <div className="line"></div>
+</div>
     </div>
+
+    
   );
 };
 
