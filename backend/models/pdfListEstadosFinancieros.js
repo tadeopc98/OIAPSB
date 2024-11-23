@@ -1,12 +1,11 @@
-// backend/models/files.js
 const pdfList = [
     {
       id: 1,
       titulo: "actualizacion de software",
       descripcion: "Este es el manual de usuario para el sistema.",
-      ubicacion: "Estatutos/PDF1.pdf",
+      ubicacion: 'EstadosFinancieros/Ejemplo1.pdf',
       fecha: "2024-10-31s",
-      proyecto: "Comercializadora"
+      proyecto: "Estado Financiero"
     },
     {
       id: 2,
@@ -165,4 +164,3 @@ const pdfList = [
   ];
   
   module.exports = pdfList;
-  
