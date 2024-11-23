@@ -8,20 +8,24 @@ html, body {
 
   
 
-.cards {
+  .cards {
+    display: flex; /* Utiliza flexbox para centrar contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en líneas nuevas si es necesario */
     padding-top: 100px;
-    width: 50%; /* Reduce el ancho del contenedor para las tarjetas */
-    margin: 0 auto; /* Centra el contenedor en la página */
-    
+    width: 100%; /* Ajusta el ancho para adaptarse al espacio */
+    margin: 0 auto; /* Asegura que el contenedor esté centrado en la página */
 }
 
+
 .card-item {
-    margin: 0 auto;
+    margin: 10px; /* Espacio uniforme alrededor de cada tarjeta */
     width: 90%;
     height: auto;
     border: none;
-    padding: 0px,0px,0px,0px;
 }
+
 
 .card-item img {
     filter: invert(48%) sepia(90%) saturate(500%) hue-rotate(150deg);
@@ -93,6 +97,13 @@ html, body {
     justify-content: center;
     align-items: center;
     background-image: url('../assets/quienesSomos.webp');
+
+}
+
+.tarjets{
+    width: 100vw;
+    
+
 }
 
 
@@ -100,7 +111,8 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%; /* Cambiado a 100% */
-    position: relative;
+    height: 100%;
+    position:relative;
 }
 
 

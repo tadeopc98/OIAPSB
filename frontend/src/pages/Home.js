@@ -20,7 +20,7 @@ const Home = () => {
     <div className="container">
       {/*Estructura de "quienesSomos"*/}
       <div className="bg-content">
-  <div className="columns-container">
+      <div className="columns-container">
     {/* Columna 1: Quiénes Somos */}
     <div className="column">
       <h2>¿Quiénes Somos?</h2>
@@ -48,7 +48,7 @@ const Home = () => {
 </div>
 
       {/* Estructura de la cuadrícula */}
-      <div className="container_grid grid grid-cols-5 grid-rows-5 gap-4">
+      <div className="container_grid grid grid-cols-5 grid-rows-5 gap-4 tarjets">
         <div className="row-span-5"></div>
         <div className="row-span-5 col-start-5 row-start-1"></div>
         <div className="cards col-span-3 row-span-5 col-start-2 row-start-1">

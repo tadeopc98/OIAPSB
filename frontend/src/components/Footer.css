@@ -1,6 +1,6 @@
 footer {
-  background-color: #353b61; /* Fondo oscuro */
-  color: white; /* Texto blanco */
+  background-color: #ccd4fa; /* Fondo oscuro */
+  color: rgb(1, 1, 176); /* Texto blanco */
   padding: 20px 0;
   text-align: center; /* Centrar el texto del copyright */
 }
@@ -32,7 +32,7 @@ footer {
 }
 
 .footer-column ul li a {
-  color: white;
+  color: rgb(1, 1, 176);
   text-decoration: none;
 }
 
