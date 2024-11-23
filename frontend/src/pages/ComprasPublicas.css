@@ -1,0 +1,84 @@
+/* Contenedor principal que alinea el sidebar y el visor PDF en fila */
+.estatutos-container {
+    display: flex;
+    height: 100vh; /* Asegura que la altura ocupe toda la ventana */
+}
+
+/* Nuevo contenedor para apilar ambos sidebars en columna */
+.estatutos-sidebars-container {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en columna */
+    width: 25%; /* Mantén el ancho del 30% */
+}
+
+/* Estilos para los sidebars */
+.estatutos-sidebar, .estatutos-sidebar2 {
+    width: 100%; /* Asegura que ambos sidebars ocupen el 100% dentro del contenedor */
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: sticky;
+    max-height: 45vh; /* Limita la altura de la barra lateral */
+    overflow-y: auto; /* Scroll interno si la lista es muy larga */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efecto de sombra */
+    color: white;
+}
+
+
+/* Estilos para el contenedor del visor PDF */
+.estatutos-viewer-container {
+    width: 70%; /* Toma el 70% del ancho disponible */
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    overflow: hidden; /* Asegura que no haya desbordamientos */
+}
+
+/* Estilo para el título de la lista */
+.estatutos-list-title {
+    text-align: center;
+    color: #0084ff !important;
+}
+
+.estatutos-list-titleD {
+    text-align: left;
+    color: #0084ff!important;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+.estatutos-list-text {
+    text-align: left;
+    color: rgb(15, 0, 146) !important;
+    text-transform:capitalize
+}
+
+li {
+    text-transform: capitalize;
+    color: rgb(15, 0, 146);
+
+}
+
+li:hover {
+    text-decoration: underline;
+}
+
+/* Oculta ciertos botones del visor PDF */
+button[aria-label="Download"],
+button[aria-label="Open file"],
+button[aria-label="Print"],
+button[aria-label="More actions"],
+button[aria-label="Search"] {
+    display: none !important;
+}
+
+/* Oculta la barra lateral del visor PDF */
+.rpv-default-layout__sidebar {
+    display: none !important;
+}

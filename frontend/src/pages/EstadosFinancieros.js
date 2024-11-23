@@ -43,7 +43,7 @@ const EstadosFinancieros = () => {
     <div className="estatutos-sidebars-container">
         {/* Primer sidebar */}
         <div className="estatutos-sidebar">
-            <h5 className='estatutos-list-title'>Estatutos en archivos PDF por fecha</h5>
+            <h5 className='estatutos-list-title'>Estados Financieros en archivos PDF por fecha</h5>
             <ul>
                 {pdfs.map((pdf) => (
                     <li 

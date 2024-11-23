@@ -3,7 +3,7 @@ const cors = require('cors');
 const path = require('path');
 const pdfRoutesEstatutos = require('./routes/pdfRoutesEstatutos');
 const pdfRoutesEstadosFinancieros = require('./routes/pdfRoutesEstadosFinancieros');
-
+const pdfRoutesComprasPublicas = require('./routes/pdfRoutesComprasPublicas');
 
 const app = express();
 
@@ -20,6 +20,7 @@ app.use('/static', express.static(path.join(__dirname, 'pdfs'))); // Carpeta don
 
 app.use('/api', pdfRoutesEstatutos);
 app.use('/api', pdfRoutesEstadosFinancieros);
+app.use('/api', pdfRoutesComprasPublicas);
 
 app.listen(3001, () => {
     console.log('Servidor corriendo en el puerto 3001');
