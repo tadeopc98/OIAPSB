@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Slider from 'react-slick';
 import { useNavigate } from 'react-router-dom'; // Añadido para la navegación
 import './Home.css';
 import estatuto from '../assets/estatutos.png';
@@ -12,10 +13,28 @@ import encurso from '../assets/en-curso.png';
 import maquinaria from '../assets/excavador.png';
 import servicios from '../assets/servicio.png';
 import img1 from '../assets/img1.webp'
+import img2 from '../assets/img2.webp'
+import img3 from '../assets/img3.webp'
+import video from '../assets/video.mp4'
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 
 const Home = () => {
   const navigate = useNavigate(); // Hook para redirigir a otras páginas
   const [message, setMessage] = useState('');
+
+  // Configuración del carrusel
+  const settings = {
+    dots: true, // Indicadores en el carrusel
+    infinite: true, // Ciclo infinito
+    speed: 500, // Velocidad de transición
+    slidesToShow: 1, // Mostrar una imagen por vez
+    slidesToScroll: 1, // Scroll de una imagen a la vez
+    autoplay: true, // Activar auto-desplazamiento
+    autoplaySpeed: 5000, // Tiempo entre imágenes (5 segundos)
+    pauseOnHover: true, // Pausar cuando el mouse está encima
+  };
 
   return (
     <div className="container">
@@ -176,10 +195,45 @@ const Home = () => {
           </div>
         </div>
       </div>
-      {/* Línea divisoria con efecto especial */}
-<div className="divider">
-  <div className="line"></div>
-</div>
+      <div className="container">
+      {/* Línea divisoria */}
+      <div className="divider">
+        <div className="line"></div>
+      </div>
+
+      {/* Carrusel */}
+      <div className="carousel-section">
+        <h2 className="carousel-title">Galería Multimedia</h2>
+        <Slider {...settings}>
+          {/* Imagen 1 */}
+          <div>
+            <img src={img1} alt="Imagen 1" className="carousel-img" />
+          </div>
+          {/* Imagen 2 */}
+          <div>
+            <img src={img2} alt="Imagen 2" className="carousel-img" />
+          </div>
+          {/* Imagen 3 */}
+          <div>
+            <img src={img3} alt="Imagen 3" className="carousel-img" />
+          </div>
+          {/* Video */}
+          <div>
+            <video
+              className="carousel-video"
+              controls
+              onEnded={(e) => {
+                // Regresa al inicio del carrusel cuando el video termina
+                e.target.currentTime = 0;
+              }}
+            >
+              <source src={video} type="video/mp4" />
+              Tu navegador no soporta videos.
+            </video>
+          </div>
+        </Slider>
+      </div>
+    </div>
     </div>
 
     
