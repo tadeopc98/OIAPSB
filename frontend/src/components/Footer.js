@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import "./Footer.css";
+import facebookLogo from '../assets/facebookLogo.png'
 
 function Footer() {
   return (
@@ -31,13 +32,14 @@ function Footer() {
         <div className='footer-column'>
           <h3>Contactos</h3>
           <ul>
-            <li><Link to="/facebook">Organismo Independiente De Agua Potable San Buenaventura 
+            <li className="normal-link"><Link to="https://www.facebook.com/profile.php?id=100083339401907" title='Visita nuestro Facebook'>
+            <img src={facebookLogo} alt="Facebook Logo" className="footer-icon" />
+            Organismo Independiente De Agua Potable San Buenaventura</Link></li>
+            <li className="normal-link"><Link to="/telefonos">5540875021</Link></li>
+            <li className="normal-link"><Link to="/correo">OIAPSB@outlook.com</Link></li>
+            <li className="normal-link"><Link to="/direccion">Pensador Mexicano SN, San Buenaventura, Toluca, Mex.
             </Link></li>
-            <li><Link to="/telefonos">5540875021</Link></li>
-            <li><Link to="/correo">OIAPSB@outlook.com</Link></li>
-            <li><Link to="/direccion">Pensador Mexicano SN, San Buenaventura, Toluca, Mex.
-            </Link></li>
-            <li className="no-hover">
+            <li className="especial-link">
             Horario de atención:
             <br />
             Lunes / Viernes 9:00 am - 4:30 pm 

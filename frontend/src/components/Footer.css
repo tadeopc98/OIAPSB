@@ -36,11 +36,24 @@ footer {
   text-decoration: none;
 }
 
-.footer-column ul li a:hover {
-  text-decoration: underline; /* Efecto hover en los enlaces */
+.normal-link:hover{
+  text-decoration: underline;
+}
+
+.especial-link:hover{
+  text-decoration: none;
+
 }
 
 footer p {
   margin-top: 20px;
   font-size: 0.9rem;
+}
+
+/* Estilo para los íconos en el footer */
+.footer-icon {
+  width: 20px; /* Ajusta este tamaño según tus necesidades */
+  height: 20px; /* Asegúrate de mantener proporción */
+  margin-right: 8px; /* Espaciado entre el ícono y el texto */
+  vertical-align: middle; /* Centra el ícono con el texto */
 }
