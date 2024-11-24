@@ -29,13 +29,20 @@ function Footer() {
         
         {/* Columna 3: Contacto */}
         <div className='footer-column'>
-          <h3>Contacto</h3>
+          <h3>Contactos</h3>
           <ul>
-            <li><Link to="/facebook">Facebook</Link></li>
-            <li><Link to="/telefonos">Teléfonos</Link></li>
-            <li><Link to="/correo">Correo</Link></li>
-            <li><Link to="/direccion-horarios">Dirección / Horarios</Link></li>
-            <li><Link to="/atencion">Atención</Link></li>
+            <li><Link to="/facebook">Organismo Independiente De Agua Potable San Buenaventura 
+            </Link></li>
+            <li><Link to="/telefonos">5540875021</Link></li>
+            <li><Link to="/correo">OIAPSB@outlook.com</Link></li>
+            <li><Link to="/direccion">Pensador Mexicano SN, San Buenaventura, Toluca, Mex.
+            </Link></li>
+            <li className="no-hover">
+            Horario de atención:
+            <br />
+            Lunes / Viernes 9:00 am - 4:30 pm 
+            <br />
+            Sábado 9:00 am - 2:00 pm           </li>
           </ul>
         </div>
       </div>
